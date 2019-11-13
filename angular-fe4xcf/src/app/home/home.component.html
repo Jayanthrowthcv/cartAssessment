@@ -2,7 +2,7 @@
 	<span> All items</span>
 	<span *ngIf="cartMessage!=''" class="cartMsg"> {{cartMessage}} </span>
 	<span>
-      <button routerLink="/Cart" routerLinkActive="active" class="cartBtn"> Go to cart
+      <button routerLink="/Cart" [disabled]="cartCount.length==0" routerLinkActive="active" class="cartBtn"> Go to cart
        <span *ngIf="cartCount.length!=0" class="count">{{cartCount.length}}</span> </button> 
     </span>
 </div>
