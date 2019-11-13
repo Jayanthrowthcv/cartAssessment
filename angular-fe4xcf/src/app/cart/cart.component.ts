@@ -1,5 +1,6 @@
 import { Component ,OnInit } from '@angular/core';
 import { HomeService } from "../home/home.service";
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'my-cart',
@@ -12,7 +13,7 @@ export class CartComponent implements OnInit {
   cartList:Array<Object>=[];
   totalPrice =0 ;
   totalDiscount = 0;
-  constructor( private service:HomeService){
+  constructor( private service:HomeService , private router:Router){
     
   }
   ngOnInit(){
@@ -21,5 +22,8 @@ export class CartComponent implements OnInit {
       this.totalDiscount += x.discount;
       this.totalPrice += x.price;
     })
+  }
+  goToHome(){
+    this.router.navigate(['/Home']);
   }
 }
