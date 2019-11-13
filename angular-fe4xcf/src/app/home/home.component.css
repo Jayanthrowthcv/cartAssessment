@@ -59,6 +59,7 @@
  background-color: lightgrey;
  position:absolute;
  bottom:0;
+ padding-bottom: 10px;
 }
 .imgStyle{  
   position:absolute;
