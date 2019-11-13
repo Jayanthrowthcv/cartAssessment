@@ -98,3 +98,6 @@
   margin-right: 5%;
   padding:3px;
 }
+.cartBtn:disabled{
+  background-color: lightgray;
+}
