@@ -1,0 +1,100 @@
+.container-fluid{  
+  height: 100vh;
+}
+.header{
+  font-size: 18px;
+}
+.items{
+  display: inline-block;
+  border: 1px solid lightgray;
+  height: 40%;
+  width: 22%;
+  margin: 1.5%;
+  margin-bottom: 0;
+  margin-right: 0;  
+  position:relative;
+}
+.cartMsg{
+  margin-left:35%;
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: lightgreen;
+  border-radius: 5px;
+}
+.itemDiv{
+  height: 20%;
+}
+.cartBtn{
+  float: right;
+  margin-right: 4%;
+  background-color: #0099ff;
+  color: white;
+  padding:5px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  position: relative;
+}
+.count{
+  position: absolute;
+  float: right;
+  width: 17px;
+  transform: translate(40%,-40%);
+  top: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  border: 1px solid lightgray;
+}
+.imgDiv{
+  margin: 20px 0px 20px 0px;
+  height: auto;
+}
+.itemFooter{
+ height: 22%;
+ width: 100%;
+ background-color: lightgrey;
+ position:absolute;
+ bottom:0;
+}
+.imgStyle{  
+  position:absolute;
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  height: 60%;  
+  border: 1px solid lightgray;
+  background-color: lightgrey;
+}
+.discountStyle{
+  font-size: 13px;
+  background-color: lightgreen;
+  color: white;
+  width: 18%;
+  padding: 3px;
+  display: inline-block;
+  position:absolute;
+  top: 10%;
+}
+.itemName{
+  padding: 5px;
+  width: 20%;
+}
+.itemDet{
+  width: 100%;
+  padding: 5px;
+  position: relative;
+}
+.btnClass{
+  font-size: 11px;
+  border-radius: 5px;
+  border: 1px solid #0099ff;
+  background-color: transparent;
+  color: #0099ff;
+  float: right;
+  margin-right: 5%;
+  padding:3px;
+}

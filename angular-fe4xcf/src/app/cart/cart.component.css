@@ -1,0 +1,83 @@
+table#itemsTable th {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 15%;
+  text-align: center;
+}
+table#itemsTable th:first-of-type{
+  width:80%;
+  text-align: left;
+}
+table#itemsTable{
+  border-collapse: collapse;
+  width: 86%;
+  display: inline-block;
+  position: absolute;
+  top:0;
+  color: gray;
+}
+table#itemsTable td{
+  padding:5px;
+  margin:0;
+}
+.itemWrap{
+  width: auto;
+  border: 1px solid lightgray;
+  padding:6px;
+}
+table#itemsTable td{
+  text-align: center;
+}
+table#itemsTable td:first-child{
+ text-align: left;
+}
+table#itemsTable tr:last-of-type{
+   border-bottom: 1px solid lightgray;
+}
+table#itemsTable tr{
+   padding : 10px;
+}
+.parentDiv{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.ADbtn{
+  background-color: transparent;
+  border:1px solid lightgray;
+  padding: 5px 10px 5px 10px;
+  margin:5px;
+  width:10px;
+}
+.delbtn{
+  float : right;
+  background-color: transparent;
+  border: none;
+}
+table#totalDiv{
+  border: 1px solid lightgray;
+  width: 25%;
+  height: auto;
+  display: inline-block;
+  position: absolute;
+  right:8%;
+  border-collapse: collapse;
+  color: gray;
+}
+table#totalDiv tr:last-of-type{
+  background-color: lightgray;
+}
+table#totalDiv td:nth-of-type(even){
+  width:50%;
+  padding:5px;
+  text-align: right;
+}
+table#totalDiv td:nth-of-type(odd){
+  width:50%;
+  padding: 5px;
+}
+.header{
+  font-size: 18px;
+}

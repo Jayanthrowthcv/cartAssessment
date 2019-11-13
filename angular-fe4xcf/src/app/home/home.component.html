@@ -1,0 +1,29 @@
+<div class="header">
+	<span> All items</span>
+	<span *ngIf="cartMessage!=''" class="cartMsg"> {{cartMessage}} </span>
+	<span>
+      <button routerLink="/Cart" routerLinkActive="active" class="cartBtn"> Go to cart
+       <span *ngIf="cartCount.length!=0" class="count">{{cartCount.length}}</span> </button> 
+    </span>
+</div>
+<hr>
+<div class="items" *ngFor="let item of arrayList">
+	<div class="itemDiv">
+		<div class="imgDiv">
+			<span class="discountStyle">{{item.discount}}% off</span>
+			<div class="imgStyle">
+				<img src="https://welcomebackshirtshack.com/wp-content/uploads/2019/06/Photo-Not-Available-Image.jpg" height="100%" width="100%">
+			</div>
+		</div>
+	</div>
+	<div class="itemFooter">
+		<div class="itemName">
+			{{item.name}}
+		</div>
+		<div class="itemDet">
+			<span style="text-decoration: line-through red;margin-right:12px;">${{item.price}}</span>
+			<b>${{item.price-(item.price*item.discount)/100}}</b>
+			<button class="btnClass" (click)="addToCart(item)">Add to Cart</button>
+		</div>
+	</div>
+</div>

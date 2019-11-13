@@ -1,0 +1,44 @@
+<hr>
+<p class="header">
+	< Order Summary</p> <hr>
+		<div class="parentDiv">
+			<table id="itemsTable">
+				<th>Items({{cartList.length}})</th>
+				<th>Qty</th>
+				<th>Price</th>
+				<tr *ngFor="let item of cartList">
+					<td>
+						<div class="itemWrap">
+							<img src="https://welcomebackshirtshack.com/wp-content/uploads/2019/06/Photo-Not-Available-Image.jpg" height="20px" width="20px">
+          {{item.itemName}} <button class="delbtn">x</button></div>
+					</td>
+					<td>
+						-<input class="ADbtn" value="{{item.count}}">+
+        </td>
+					<td>
+						<b>${{item.price}}</b>
+					</td>
+				</tr>
+			</table>
+			<table id="totalDiv">
+				<tr>
+					<td>Total</td>
+				</tr>
+				<tr>
+					<td>Items({{cartList.length}})</td>:
+					<td>${{totalPrice}}</td>
+				</tr>
+				<tr>
+					<td>Discount</td>:
+					<td>${{totalDiscount}}</td>
+				</tr>
+				<tr>
+					<td>Type Discount</td>:
+					<td>$0</td>
+				</tr>
+				<tr>
+					<td>Order Total</td>:
+					<td><b>${{totalPrice-totalDiscount}}</b></td>
+				</tr>
+			</table>
+		</div>
