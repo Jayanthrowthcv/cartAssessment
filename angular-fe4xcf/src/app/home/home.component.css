@@ -102,3 +102,8 @@
 .cartBtn:disabled{
   background-color: lightgray;
 }
+.btnClass:disabled{
+  background-color: lightgray;
+  border: 1px solid white;
+  color: white;
+}
